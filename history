@@ -1,0 +1,1000 @@
+    7  curl 172.31.24.29:30543/
+    8  clear
+    9  nano ex2.yml 
+   10  curl 172.31.24.29:30543/
+   11  sestatus
+   12  setenforce 0
+   13  ssh node
+   14  sed -i 's/enforcing/disabled/g' /etc/selinux/config /etc/selinux/config
+   15  ssh node
+   16  clear
+   17  curl 172.31.24.29:30543/
+   18  reboot
+   19  exit
+   20  clear
+   21  export TERM=xterm
+   22  clear
+   23  hostname
+   24  clear
+   25  kubectl get nodes
+   26  clear
+   27  netstat -an|grep 30543
+   28  clear
+   29  culr localhost:30543
+   30  curl localhost:30543
+   31  sestatus
+   32  systemctl status firewalld
+   33  clear
+   34  kubectl get pods 
+   35  kubectl get svc 
+   36  curl 52.200.152.209:30543
+   37  curl http://52.200.152.209:30543
+   38  clear
+   39  kubectl get svc 
+   40  kubectl depete svc/nginx-deployment
+   41  kubectl delete svc/nginx-deployment
+   42  clear
+   43  hsitory 
+   44  history 
+   45  history |grep apply 
+   46  clear
+   47  kubectl get deploy
+   48  kubectl expose deployment nginx-deployment --type=NodePort --port=80
+   49  kubectl get svc
+   50  curl 172.31.24.29:300-7
+   51  curl http://172.31.24.29:300-7
+   52  curl http://172.31.24.29:30007
+   53  clear
+   54  kubectl get svc
+   55  kubectl describe svc/nginx-deployment
+   56  clear
+   57  kubectl describe svc/nginx-deployment
+   58  kubectl describe pod -o wide
+   59  clear
+   60  kubectl get  pod -o wide
+   61  clear
+   62  kubectl get nodes
+   63  kubectl get nodes -side
+   64  clear
+   65  kubectl get nodes -o wide
+   66  clear
+   67  kubectl describe svc/nginx-deployment
+   68  kubectl describe svc
+   69  kubectl get  svc
+   70  claer
+   71  clear
+   72  kubectl expose deployment nginx-deployment --type=LoadBalancer --port=80
+   73  clear
+   74  kubectl delete svc/nginx-deployment
+   75  kubectl expose deployment nginx-deployment --type=LoadBalancer --port=80
+   76  clear
+   77  kubectl get svc/nginx-deployment
+   78  clear
+   79  pwd
+   80  ls -l
+   81  cat t
+   82  clear
+   83  pwd
+   84  git clone https://github.com/bakuppus/kubernetes-dashboard.git
+   85  clear
+   86  ls -l
+   87  cd kubernetes-dashboard/
+   88  clear
+   89  ls -l
+   90  vi kubernetes-dashboard.yaml 
+   91  nano kubernetes-dashboard.yaml 
+   92  kubectl apply -f kubernetes-dashboard.yaml 
+   93  clear
+   94  kubectl get svc -n kube-system
+   95  clear
+   96  kubectl get svc -n kube-system
+   97  clear
+   98  kubectl get svc -n kube-system
+   99  nano kubernetes-dashboard.yaml 
+  100  clear
+  101  kubectl create clusterrolebinding kubernetes-dashboard -n kube-system --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
+  102  clear
+  103  kubectl get svc -n kube-system
+  104  kubectl describe svc/kubernetes-dashboard
+  105  kubectl describe svc/kubernetes-dashboard -n kube-syste,
+  106  kubectl describe svc/kubernetes-dashboard -n kube-system
+  107  clear
+  108  kubectl get svc -n kube-system
+  109  nano kubernetes-dashboard.yaml 
+  110  kubectl get svc -n kube-system
+  111  clear
+  112  kubectl get svc -n kube-system
+  113  c;lear
+  114  clear
+  115  kubectl get svc -n kube-system
+  116  kubectl describe svc/kubernetes-dashboard
+  117  kubectl describe svc/kubernetes-dashboard -n kube-ssytem
+  118  kubectl describe svc/kubernetes-dashboard -n kube-sytem
+  119  kubectl describe svc/kubernetes-dashboard -n kube-system
+  120  clear
+  121  kubectl describe svc/kubernetes-dashboard -n kube-system
+  122  kubectl get svc -n kube-system
+  123  clear
+  124  kubectl get svc -n kube-system
+  125  kubectl patch svc kubernetes-dashboard -n kube-system -p '{"spec": {"type": "LoadBalancer", "externalIPs":["34.195.37.123"]}}
+  126  kubectl patch svc kubernetes-dashboard -n kube-system -p '{"spec": {"type": "LoadBalancer", "externalIPs":["34.195.37.123"]}}'
+  127  clear
+  128  kubectl get svc -n kube-system
+  129  curl 34.195.37.123:30525
+  130  curl localhost:30525
+  131  clear
+  132  kubectl delete svc/kubernetes-dashboard -n kube-system
+  133  nano kubernetes-dashboard.yaml 
+  134  kubectl apply -f kubernetes-dashboard.yaml 
+  135  clear
+  136  kubectl get svc -n kube-system
+  137  clear
+  138  kubectl get svc -n kube-system
+  139  kubectl get pod -n kube-system
+  140  clear
+  141  kubectl edit deploy kubernetes-dashboard
+  142  kubectl edit deploy kubernetes-dashboard -n kube-system
+  143  clear
+  144  nano kubernetes-dashboard.yaml 
+  145  kubectl delete deploy/kubernetes-dashboard
+  146  kubectl delete deploy/kubernetes-dashboard -n kube-system
+  147  kubectl apply -f kubernetes-dashboard -n kube-
+  148  kubectl apply -f kubernetes-dashboard.yaml 
+  149  clear
+  150  kubectl get pod -n kube-system
+  151  kubectl delete pod kubernetes-dashboard-58fc7dc4-h65hp -n kube-system
+  152  clear
+  153  kubectl get pod -n kube-system
+  154  kubectl delete pod/kubernetes-dashboard-58fc7dc4-z5lxb -n kube-system
+  155  clear
+  156  kubectl get pod -n kube-system
+  157  kubectl describe pod kubernetes-dashboard-58fc7dc4-zxjp4-n kube-system
+  158  clear
+  159  kubectl describe pod kubernetes-dashboard-58fc7dc4-zxjp4 -n kube-system 
+  160  clear
+  161  kubectl describe pod kubernetes-dashboard-58fc7dc4-zxjp4 -n kube-system 
+  162  clear
+  163  kubectl get env
+  164  kubectl get event
+  165  clear
+  166  kubectl log pod kubernetes-dashboard-58fc7dc4-zxjp4 -n kube-system 
+  167  kubectl logs pod kubernetes-dashboard-58fc7dc4-zxjp4 -n kube-system 
+  168  kubectl logs kubernetes-dashboard-58fc7dc4-zxjp4 -n kube-system 
+  169  clear
+  170  kubectl logs kubernetes-dashboard-58fc7dc4-zxjp4 -n kube-system 
+  171  clear
+  172  kubectl get pods -n kube-system
+  173  nano kubernetes-dashboard.yaml 
+  174  clear
+  175  kubectl get pod svc -n kube-system
+  176  kubectl get pod -n kube-system
+  177  kubectl deletekubernetes-dashboard-58fc7dc4-zxjp4 -n kube-system
+  178  kubectl delete kubernetes-dashboard-58fc7dc4-zxjp4 -n kube-system
+  179  clear
+  180  kubectl get deploy
+  181  kubectl get deploy -n kube-system
+  182  kubectl delete deploy/kubernetes-dashboard -n kube-system
+  183  clear
+  184  kubectl get pods -n kube-system
+  185  clear
+  186  cls
+  187  cd/h
+  188  clear
+  189  cd /home/centos/
+  190  clear
+  191  ls 
+  192  wge
+  193  wget
+  194  yum install wget
+  195  clear
+  196  wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta6/aio/deploy/recommended.yaml
+  197  clear
+  198  dir
+  199  clear
+  200  nano recommended.yaml 
+  201  kubectl apply -f recommended.yaml 
+  202  lea
+  203  clear
+  204  kubectl get svc
+  205  kubectl get svc -n kube-system
+  206  kubectl get pod -n kube-system
+  207  clear
+  208  kubectl get pod -n kubernetes-dashboard
+  209  clear
+  210  ls -l
+  211  nano recommended.yaml 
+  212  cera
+  213  clear
+  214  cat recommended.yaml |grep kind
+  215  nano recommended.yaml 
+  216  clear
+  217  kubectl depete deploy/kubernetes-dashboard
+  218  kubectl delete deploy/kubernetes-dashboard
+  219  kubectl delete deploy/kubernetes-dashboard -n kube-system
+  220  kubectl delete  kubernetes-dashboard -n kube-system
+  221  kubectl delete kubernetes-dashboard -n kube-system
+  222  kubectl get deploy --all-namespaces
+  223  clear
+  224  kubectl get deploy --all-namespaces
+  225  kubectl delete kubernetes-dashboard -n kube-system
+  226  kubectl delete deploy/kubernetes-dashboard -n kube-system
+  227  kubectl delete deploy/kubernetes-dashboard -n kubernetes-dashboard
+  228  kubectl delete pod  -n kubernetes-dashboard
+  229  kubectl delete svc/kubernetes-dashboard  -n kubernetes-dashboard
+  230  clear
+  231  pwd
+  232  ls
+  233  kubectl apply -f recommended.yaml 
+  234  kubectl delete deployment kubernetes-dashboard --namespace=kubernetes-dashboard
+  235  kubectl delete service kubernetes-dashboard --namespace=kubernetes-dashboard
+  236  kubectl delete role kubernetes-dashboard-minimal --namespace=kubernetes-dashboard
+  237  kubectl delete rolebinding kubernetes-dashboard-minimal --namespace=kubernetes-dashboard
+  238  kubectl delete sa kubernetes-dashboard --namespace=kubernetes-dashboard
+  239  kubectl delete secret kubernetes-dashboard-certs --namespace=kubernetes-dashboard
+  240  kubectl delete secret kubernetes-dashboard-key-holder --namespace=kubernetes-dashboard
+  241  clear
+  242  pwd
+  243  wget https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+  244  wget es/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+  245  clear
+  246  CLEAR
+  247  clear
+  248  wget https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+  249  clear
+  250  wget https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
+  251  c;ear
+  252  clear
+  253  wget https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+  254  clear
+  255  git clone https://github.com/gh-Devin/kubernetes-dashboard.git
+  256  cd kubernetes-dashboard/
+  257  clear
+  258  ls -l
+  259  nano kubernetes-dashboard.yaml 
+  260  kubectl apply -f kubernetes-dashboard.yaml 
+  261  clear
+  262  kubectl get svc --all-namespaces
+  263  kubectl get pod --all-namespaces
+  264  clear
+  265  kubectl get pod --all-namespaces
+  266  kubectl depete kubernetes-dashboard-54c99d87f4-ljpj2- kubernetes-dashboard
+  267  kubectl delete kubernetes-dashboard-54c99d87f4-ljpj2- kubernetes-dashboard
+  268  kubectl delete kubernetes-dashboard-54c99d87f4-ljpj2 -n kubernetes-dashboard 
+  269  clear
+  270  kubectl delete kubernetes-dashboard-54c99d87f4-ljpj2- kubernetes-dashboard
+  271  clear
+  272  kubectl get pod --all-namespaces
+  273  kubectl delete kubernetes-dashboard-54c99d87f4-ljpj2 -n kubernetes-dashboard
+  274  clear
+  275  kubectl get pod --all-namespaces
+  276  kubectl delete kubernetes-dashboard-54c99d87f4-ljpj2 -n kubernetes-dashboard
+  277  clear
+  278  nano kubernetes-dashboard.yaml 
+  279  clear
+  280  owd
+  281  pwd
+  282  clear
+  283  ls -l
+  284  nano kubernetes-dashboard.yaml 
+  285  cear
+  286  clear
+  287  kubectl get svc --all-namespaces
+  288  kubectl get pod --all-namespaces
+  289  kubectl describe pod kubernetes-dashboard-54c99d87f4-ljpj2 -n kube-system
+  290  clear
+  291  kubectl describe pod kubernetes-dashboard-54c99d87f4-ljpj2 -n kube-system
+  292  clear
+  293  kubectl logs   kubernetes-dashboard-54c99d87f4-ljpj2 -n kube-system
+  294  clear
+  295  kubectl get pod --all-namespaces
+  296  kubectl depete kubernetes-dashboard-54c99d87f4-ljpj2 -n kube-system
+  297  kubectl delete kubernetes-dashboard-54c99d87f4-ljpj2 -n kube-system
+  298  kubectl delete pod kubernetes-dashboard-54c99d87f4-ljpj2 -n kube-system
+  299  clear
+  300  kubectl get pod --all-namespaces
+  301  nano kubernetes-dashboard
+  302  nano kubernetes-dashboard.yaml 
+  303  clear
+  304  kubectl get deploy --all-namespaces
+  305  kubectl delete deploy/kubernetes-dashboard -n kube-system
+  306  clear
+  307  kubectl get deploy --all-namespaces
+  308  kubectl delete deploy/dashboard-metrics-scraper -n kube-system
+  309  kubectl delete deploy/dashboard-metrics-scraper -n kubernetes-dashboard
+  310  clear
+  311  kubectl get deploy --all-namespaces
+  312  kubectl get svc --all-namespaces
+  313  kubectl delete svc kubernetes-dashboard-external -n kube-system
+  314  clear
+  315  kubectl get svc --all-namespaces
+  316  kubectl delete svc kubernetes-dashboard -n kube-system
+  317  cear
+  318  clear
+  319  kubectl get svc --all-namespaces
+  320  kubectl get pod --all-namespaces
+  321  clea
+  322  cear
+  323  clear
+  324  nano kubernetes-dashboard.yaml 
+  325  clear
+  326  claer
+  327  cd ..
+  328  clear
+  329  pwd
+  330  clear
+  331  ls -l
+  332  cd ..
+  333  mkdir db
+  334  cd db/
+  335  clear
+  336  wget https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
+  337  clear
+  338  nano kubernetes-dashboard.yaml 
+  339  kubectl apply -f kubernetes-dashboard.yaml 
+  340  clear
+  341  kubectl get svc --all-namespaces
+  342  kubectl get pod --all-namespaces
+  343  clear
+  344  nano kubernetes-dashboard.yaml 
+  345  kubectl apply -f kubernetes-dashboard.yaml 
+  346  kubectl depete deploy kubernetes-dashboard -n kube-system
+  347  kubectl delete deploy kubernetes-dashboard -n kube-system
+  348  kubectl apply -f kubernetes-dashboard.yaml 
+  349  clear
+  350  kubectl get pod --all-namespaces
+  351  clear
+  352  kubectl get pod --all-namespaces
+  353  kubectl describe pod kubernetes-dashboard-b64bbc85-rf8bx -n kube-system
+  354  clear
+  355  kubectl describe pod kubernetes-dashboard-b64bbc85-rf8bx -n kube-system
+  356  kubectl edit  deploy  --all-namespaces
+  357  kubectl edit  deploy  kubernetes-dashboard -n kube-system
+  358  clear
+  359  kubectl export   deploy  kubernetes-dashboard -n kube-system
+  360  kubectl get export  deploy  kubernetes-dashboard -n kube-system
+  361  clear
+  362  kubectl get pod --all-namespaces
+  363  kubectl get pod --all-namespaces
+  364  kubectl logs kubernetes-dashboard-b64bbc85-rf8bx -n kube-system
+  365  clear
+  366  kubectl get pod --all-namespaces
+  367  kubectl get pod --all-namespaces -o wide
+  368  clear
+  369  kubectl get pod --all-namespaces -o wide
+  370  clear
+  371  kubectl get pod --all-namespaces -o wide
+  372  clear
+  373  kubectl get pod --all-namespaces -o wide |grep -i dashboard
+  374  xlear
+  375  clear
+  376  kubectl get nodes
+  377  clear
+  378  nano kubernetes-dashboard.yaml 
+  379  cd ..
+  380  cear
+  381  clear
+  382  cd centos/
+  383  clear
+  384  nano kubernetes-dashboard/kubernetes-dashboard.yaml 
+  385  kubectl create clusterrolebinding kubernetes-dashboard -n kube-system --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
+  386  clear
+  387  kubectl get svc --all-namespaces
+  388  kubectl get pod --all-namespaces
+  389  clear
+  390  cd ..
+  391  cd db/
+  392  nano kubernetes-dashboard.yaml 
+  393  clear
+  394  kubectl get pod -n kube-system
+  395  cd /var/log/
+  396  clear
+  397  ls -l
+  398  cd containers/
+  399  clear
+  400  ls -l
+  401  clear
+  402  cd ..
+  403  clear
+  404  ls -l
+  405  cd pods/
+  406  clear
+  407  ls 
+  408  clear
+  409  cd ..
+  410  clear
+  411  ls 
+  412  ls -l
+  413  dmesg
+  414  clear
+  415  kubectl get pod -n kube-system
+  416  clear
+  417  kubectl delete deployment kubernetes-dashboard --namespace=kube-system
+  418  kubectl delete service kubernetes-dashboard --namespace=kube-system
+  419  kubectl delete role kubernetes-dashboard-minimal --namespace=kube-system
+  420  kubectl delete rolebinding kubernetes-dashboard-minimal --namespace=kube-system
+  421  kubectl delete sa kubernetes-dashboard --namespace=kube-system
+  422  kubectl delete secret kubernetes-dashboard-certs --namespace=kube-system
+  423  kubectl delete secret kubernetes-dashboard-key-holder --namespace=kube-system
+  424  clear
+  425  kubectl get pod -n kube-system
+  426  clear
+  427  kubectl create clusterrolebinding kubernetes-dashboard -n kube-system --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
+  428  clear
+  429  cd /home/db/
+  430  clar
+  431  clear
+  432  kubectl apply -f kubernetes-dashboard.yaml 
+  433  kubectl get pod --all-namespaces
+  434  clear
+  435  dir
+  436  clear
+  437  vi del.sh
+  438  chmod 755 del.sh 
+  439  ./del.sh 
+  440  clear
+  441  cp kubernetes-dashboard.yaml deploy.yml
+  442  nano deploy.yml 
+  443  kubectl apply -f deploy.yml 
+  444  clear
+  445  kubectl get pod --all-namespaces
+  446  clear
+  447  nano deploy.yml 
+  448  kubectl get pods -n kube-system
+  449  clear
+  450  kubectl apply -f deploy.yml 
+  451  kubectl get deploy -n kube-system
+  452  clear
+  453  kubectl delete deploy/kubernetes-dashboard -n kube-system
+  454  clear
+  455  kubectl apply -f kubernetes-dashboard.yaml 
+  456  alias 'ksvc=kubectl get svc -n kube-system' 
+  457  ksvc
+  458  ckear
+  459  clear
+  460  ksvc
+  461  alias 'kpo=kubectl get po  -n kube-system' 
+  462  kpo
+  463  clear
+  464  kpo
+  465  kubectl describe po kubernetes-dashboard-b64bbc85-6f9r5 -n kube-system
+  466  clea
+  467  clear
+  468  kubectl describe po kubernetes-dashboard-b64bbc85-6f9r5 -n kube-system
+  469  clear
+  470  kubectl describe po kubernetes-dashboard-b64bbc85-6f9r5 -n kube-system >out
+  471  clear
+  472  vi out 
+  473  nano out
+  474  clear
+  475  ./del.sh 
+  476  clear
+  477  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
+  478  clear
+  479  kpo
+  480  alias 
+  481  clear
+  482  alias 
+  483  kubectl get po --all-namespaces
+  484  clear
+  485  kubectl get po --all-namespaces
+  486  clear
+  487  vi net.sh
+  488  nano net.sh 
+  489  cat net.sh 
+  490  clear
+  491  cat net.sh 
+  492  ls /etc/sysctl.d/
+  493  cat /etc/sysctl.d/99-sysctl.conf 
+  494  clear
+  495  cat /etc/sysctl.d/99-sysctl.conf 
+  496  chmod 755 net.sh 
+  497  ./net.sh 
+  498  clear
+  499  cat /etc/sysctl.conf 
+  500  ls /etc/sysctl.d/
+  501  ls /etc/sysctl.d/k8s.conf 
+  502  cat  /etc/sysctl.d/k8s.conf 
+  503  kubectl explain pods
+  504  clear
+  505  kubectl explain pods
+  506  clear
+  507  dir 
+  508  kubectl get po -n kube-system
+  509  kubectl get po --all-namespaces
+  510  clear
+  511  kubectl get po --all-namespaces
+  512  cls
+  513  clear
+  514  cd ..
+  515  clear
+  516  mkdir TMP
+  517  cd TMP/
+  518  git clone https://github.com/moikot/ansible-role-k8s-dashboard.git
+  519  clear
+  520  ls -l
+  521  cd ansible-role-k8s-dashboard/
+  522  clear
+  523  ls -l
+  524  cd tasks/
+  525  clear
+  526  ls -l
+  527  nano main.yml 
+  528  cd ..
+  529  cd db/
+  530  clear
+  531  ./del.sh 
+  532  clear
+  533  kubectl get po --all-namespaces
+  534  cat del.sh |sed 's/kube-system/kubernetes-dashboard/'
+  535  cat del.sh |sed 's/kube-system/kubernetes-dashboard/' >delkb.sh
+  536  clear
+  537  nano delkb.sh 
+  538  chmod 755 delkb.sh 
+  539  ./delkb.sh 
+  540  clear
+  541  ./delkb.sh 
+  542  clear
+  543  cd ..
+  544  cd TMP/
+  545  cd ..
+  546  cd db/
+  547  clear
+  548  ls-l
+  549  ls -l
+  550  clear
+  551  cd ..
+  552  cd TMP/
+  553  clear
+  554  ls -l
+  555  cd ansible-role-k8s-dashboard/
+  556  clear
+  557  ls -l
+  558   vi pb.yml
+  559  nano pb.yml 
+  560  clear
+  561  dir
+  562  mv pb.yml ..
+  563  clear
+  564  ls -l
+  565  ls 
+  566  clear
+  567  ls -l
+  568  ls tasks/
+  569  clear
+  570  ls -l
+  571  cd ..
+  572  pwd
+  573  ls
+  574  cd ansible-role-k8s-dashboard/
+  575  cd tasks/
+  576  clear
+  577  ls -l
+  578  nano main.yml 
+  579  clear
+  580  cd ..
+  581  dir
+  582  cd defaults/
+  583  clear
+  584  ls -l
+  585  cd main.yml 
+  586  nano main.yml 
+  587  clear
+  588  cd ..
+  589  dir
+  590  clear
+  591  ls -l
+  592  cd templates/
+  593  clear
+  594  cd ..
+  595  clear
+  596  cd ..
+  597  mkdir roles
+  598  mv ansible-role-k8s-dashboard/ roles/
+  599  nano pb.yml 
+  600  ls -l
+  601  ls roles/
+  602  nano pb.yml 
+  603  ls roles/
+  604  ls roles/ >>pb.yml 
+  605  nano pb.yml 
+  606  cp /root/kubernetes-ansible/centos/hosts .
+  607  clear
+  608  ls -l
+  609  ansible-playbook -i hosts pb.yml 
+  610  ssh node
+  611  cat hosts 
+  612  clear
+  613  ssh node
+  614  cat hosts
+  615  clear
+  616  ansible-playbook -i hosts pb.yml 
+  617  nano pb.yml 
+  618  ls roles/
+  619  cd roles/
+  620  clear
+  621  ls 
+  622  cd ansible-role-k8s-dashboard/
+  623  clear
+  624  ls 
+  625  cd tasks/
+  626  clear
+  627  ls 
+  628  cd ..
+  629  clear
+  630  cd ..
+  631  clear
+  632  ls -l
+  633  ansible-playbook -i hosts pb.yml 
+  634  cd roles/
+  635  cd ansible-role-k8s-dashboard/
+  636  cd tasks/
+  637  clear
+  638  ls -l
+  639  nano main.yml 
+  640  ls -l
+  641  cat patch-dashboard.yml 
+  642  clear
+  643  cd ..
+  644  ansible-playbook -i hosts pb.yml 
+  645  clear
+  646  cat hosts 
+  647  ssh localhost
+  648  ansible-playbook -i hosts pb.yml 
+  649  nano hosts 
+  650  clear
+  651  cd roles/ansible-role-k8s-dashboard/tasks/
+  652  clear
+  653  ls -l
+  654  nano main.yml 
+  655  nano patch-dashboard.yml 
+  656  clear
+  657  alias
+  658  kpo
+  659  clear
+  660  kpo
+  661  kubectl get po -n kubernetes-dashboard
+  662  clear
+  663  cd ..
+  664  clear
+  665  ls -l
+  666  cd tasks/
+  667  clear
+  668  ls -l
+  669  cat patch-dashboard.yml 
+  670  clear
+  671  nano main.yml 
+  672  cd ..
+  673  cd..
+  674  c d ..
+  675  cd ..
+  676  claer
+  677  cd ..
+  678  clear
+  679  history 
+  680  clear
+  681  ansible-playbook -i hosts pb.yml 
+  682  ssh node
+  683  clear
+  684  ansible-playbook -i hosts pb.yml 
+  685   lea
+  686  cd roles/ansible-role-k8s-dashboard/tasks/
+  687  grep - name: this is a play at the top level of a file
+  688    hosts: all
+  689    remote_user: root
+  690    tasks:
+  691  clear
+  692  grep - name: this is a play at the top level of a file
+  693    hosts: all
+  694    remote_user: root
+  695    tasks:
+  696  clear
+  697  ls -l
+  698  nano main.yml 
+  699  nano patch-dashboard.yml 
+  700  clear
+  701  ls -l
+  702  cd ..
+  703  clear
+  704  ls -l
+  705  cd tasks/
+  706  cat patch-dashboard.yml 
+  707  clear
+  708  ls -l
+  709  cat patch-dashboard.yml 
+  710  clear
+  711  ls -l
+  712  cat patch-cluster-role-binding.yml 
+  713  clear
+  714  cat patch-cluster-role-binding.yml 
+  715  cd ..
+  716  clear
+  717  ls 
+  718  cd ..
+  719  clear
+  720  cd ansible-role-k8s-dashboard/
+  721  clear
+  722  ls 
+  723  cd defaults/
+  724  nano main.yml 
+  725  cat main.yml 
+  726  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta2/aio/deploy/recommended.yaml
+  727  clear
+  728  cd ..
+  729  ansible-playbook -i hosts pb.yml 
+  730  clear
+  731  kpo
+  732  kubectl get po --all-namespaces
+  733  clear
+  734  kubectl get po --all-namespaces
+  735  clear
+  736  kubeadm reset
+  737  rm -rf /$HOME/.kube/config
+  738  rm -rf /var/lib/kubelet
+  739  clear
+  740  ssh node
+  741  clear
+  742  cd /root/kubernetes-ansible/centos/playbooks/
+  743  clear
+  744  nano env_variables 
+  745  nano configure_master_node.yml 
+  746  cd ..
+  747  clear
+  748  ls -l
+  749  ansible-playbook -i hosts setup_master_node.yml 
+  750  ssh node
+  751  cd playbooks/
+  752  nano env_variables 
+  753  nano configure_master_node.yml 
+  754  clear
+  755  cat configure_master_node.yml 
+  756  ssh nodes
+  757  clear
+  758  nano ex2.yml
+  759  clear
+  760  history 
+  761  ssh node
+  762  kubeadm init --kubernetes-version=1.15.6-0 
+  763  yum install kubelet-1.15.6-0.x86_64
+  764  yum remove kubelet
+  765  clear
+  766  yum install kubelet-1.15.6-0.x86_64
+  767  kubeadm init --kubernetes-version=1.15.6-0 
+  768  clear
+  769  kubeadm 
+  770  yum install kubeadm-1.15.6-0
+  771  kubeadm init --kubernetes-version=1.15.6-0 
+  772  clear
+  773  yum remove kubeadm kubelet kubectl 
+  774  clear
+  775  kubeadm
+  776  clear
+  777  yum install  kubeadm-1.15.6-0 kubelet-1.15.6-0  kubectl-1.15.6-0 
+  778  kubeadm init --kubernetes-version=1.15.6-0 
+  779  kubeadm init 
+  780  clear
+  781  history 
+  782  clear
+  783  nano configure_master_node.yml 
+  784  nano setting_up_nodes.yml 
+  785  clear
+  786  nano env_variables 
+  787  clear
+  788  cd ..
+  789  ansible-playbook -i hosts setup_master_node.yml 
+  790  ansible-playbook -i hosts setup_worker_nodes.yml 
+  791  clear
+  792  kubectl get nodes
+  793  clear
+  794  cd /home/TMP/
+  795  clear
+  796  ansible-playbook -i hosts  pb.yml 
+  797  clear
+  798  kubectl get po --all-namespaces
+  799  kubectl get svc --all-namespaces
+  800  clear
+  801  kubectl get svc --all-namespaces
+  802  kubectl get po --all-namespaces
+  803  kubectl patch svc kubernetes-dashboard --type='json' -p '[{"op":"replace","path":"/spec/type","value":"NodePort"}]'
+  804  clear
+  805  kubectl patch svc kubernetes-dashboard --type='json' -p '[{"op":"replace","path":"/spec/type","value":"NodePort"}]'
+  806  kubectl get svc --all-namespaces
+  807  kubectl patch svc kubernetes-dashboard --type='json' -p '[{"op":"replace","path":"/spec/type","value":"NodePort"}]' -n kubernetes-dashboard
+  808  clear
+  809  kubectl get svc --all-namespaces
+  810  netstat -an|grep 30525
+  811  netstat -an|grep 306
+  812  netstat -an|grep 30626
+  813  clear
+  814  netstat -an|grep 306
+  815  netstat -an|grep 30625
+  816  clear
+  817  ssh node
+  818  clear
+  819  ls -l
+  820  kubectl get svc --all-namespaces
+  821  clear
+  822  dir
+  823  cd ..
+  824  cd db/
+  825  clear
+  826  ls -l
+  827  ./delkb.sh 
+  828  ./del.sh 
+  829  clear
+  830  dir
+  831  kubectl apply -f kubernetes-dashboard.yaml 
+  832  clear
+  833  kubectl get svc --all-namespaces
+  834  netstat -an|grep 31428
+  835  ckear
+  836  clear
+  837  netstat -an
+  838  clear
+  839  netstat -an
+  840  clear
+  841  kpo 
+  842  kubectl depete kubernetes-dashboard-684fb5db87-dvgcb
+  843  kubectl delete kubernetes-dashboard-684fb5db87-dvgcb 
+  844  clear
+  845  kpo
+  846  ./del.sh 
+  847  ./delkb.sh 
+  848  clear
+  849  kpo
+  850  nano kubernetes-dashboard.yaml 
+  851  kubectl apply -f kubernetes-dashboard.yaml 
+  852  kpo 
+  853  clear
+  854  kpo 
+  855  ./delkb.sh 
+  856  ./del.sh 
+  857  clear
+  858  kpo 
+  859  cler
+  860  clear
+  861   wget https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
+  862  c;ear
+  863  clear
+  864  nano kubernetes-dashboard.yaml.1 
+  865  kubectl apply -f kubernetes-dashboard.yaml.1 
+  866  kubectl create clusterrolebinding kubernetes-dashboard -n kube-system --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
+  867  clear
+  868  kpo 
+  869  kubectl describe pod kubernetes-dashboard-684fb5db87-9f8xq -n kube-system
+  870  clear
+  871  kubectl describe pod kubernetes-dashboard-684fb5db87-9f8xq -n kube-system
+  872  clear
+  873  nano kubernetes-dashboard.yaml.1 
+  874  ./delkb.sh 
+  875  clear
+  876  cd ..
+  877  clear
+  878  git clone https://github.com/gh-Devin/kubernetes-dashboard.git
+  879  cd kubernetes-dashboard/
+  880  clear
+  881  ls -l
+  882  vi kubernetes-dashboard.yaml 
+  883  nano kubernetes-dashboard.yaml 
+  884  kubectl apply -f kubernetes-dashboard.yaml 
+  885  clear
+  886  kpo
+  887  clear
+  888  kubectl get pods --all-namespaces
+  889  kubectl get pods --all-namespaces
+  890  kubectl get pods --all-namespaces
+  891  kubectl get pods --all-namespaces
+  892  kubectl get pods --all-namespaces
+  893  kubectl get pods --all-namespaces
+  894  kubectl get pods --all-namespaces
+  895  kubectl get pods --all-namespaces
+  896  kubectl get pods --all-namespaces
+  897  clear
+  898  clear
+  899  kubectl get pods --all-namespaces
+  900  kubectl get pods --all-namespaces
+  901  kubectl get pods --all-namespaces
+  902  clear
+  903  kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')" 
+  904  kubectl get pods --all-namespaces
+  905  kubectl get pods -o wide --all-namespaces
+  906  kubectl get pods -o wide --all-namespaces
+  907  kubectl get pods -o wide --all-namespaces
+  908  clear
+  909  kubectl get pods -o wide --all-namespaces
+  910  kubectl get pods -o wide --all-namespaces
+  911  clear
+  912  kubectl get pods -o wide --all-namespaces
+  913  kubectl get nodes 
+  914  clear
+  915  kubectl get nodes 
+  916  kubectl get pods -o wide --all-namespaces
+  917  clear
+  918  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta6/aio/deploy/recommended.yaml
+  919  kubectl get pods -o wide --all-namespaces
+  920  kubectl get pods -o wide --all-namespaces
+  921  kubectl get pods -o wide --all-namespaces
+  922  kubectl get pods -o wide --all-namespaces
+  923  clear
+  924  kubectl get pods -o wide --all-namespaces
+  925  kubectl get pods -o wide --all-namespaces
+  926  clear
+  927  kubectl get pods -o wide --all-namespaces
+  928  kubectl get pods -o wide --all-namespaces
+  929  kubectl get pods -o wide --all-namespaces
+  930  kubectl get pods -o wide --all-namespaces
+  931  kubectl get pods -o wide --all-namespaces
+  932  kubectl get pods -o wide --all-namespaces
+  933  kubectl get pods -o wide --all-namespaces
+  934  kubectl get pods -o wide --all-namespaces
+  935  kubectl get pods -o wide --all-namespaces
+  936  kubectl get pods -o wide --all-namespaces
+  937  clear
+  938  kubectl get pods -o wide --all-namespaces
+  939  kubectl get pods -o wide --all-namespaces
+  940  kubectl get pods -o wide --all-namespaces
+  941  kubectl get pods -o wide --all-namespaces
+  942  kubectl get pods -o wide --all-namespaces
+  943  kubectl get pods -o wide --all-namespaces
+  944  kubectl get pods -o wide --all-namespaces
+  945  clear
+  946  kubectl get pods -o wide --all-namespaces
+  947  kubectl get svc --all-namespaces
+  948  kubectl get pods -o wide --all-namespaces
+  949  c;lear
+  950  clear
+  951  kubectl get pods -o wide --all-namespaces
+  952  clear
+  953  kubeadm reset
+  954  rm -rf  $HOME/.kube/
+  955  clear
+  956  kubeadm init --apiserver-advertise-address=172.31.24.29 --podnetwork-cidr=10.244.0.0/16 
+  957  kubeadm init --apiserver-advertise-address=172.31.24.29 --pod-network-cidr=10.244.0.0/16 
+  958  exit
+  959  clear
+  960  export TERM=xterm
+  961  clear
+  962  kubectl get nodes
+  963  id
+  964  clear
+  965  ls -l
+  966  history 
+  967  docker 
+  968  clear
+  969  systemctl status docker
+  970  systemctl status kubelet
+  971  clear
+  972  kubectl get nodes
+  973  reboot
+  974  clear
+  975  export TERM=xterm
+  976  clear
+  977  kubectl get nodes
+  978  clear
+  979  id
+  980  history 
+  981  clear
+  982  kubectl get nodes
+  983  kubectl get pods
+  984  netstat -an|grep 6443
+  985  pwd
+  986  clear
+  987  ls -l
+  988  ls -al
+  989  pwd
+  990  mkdir .kube
+  991  cd .kube/
+  992  cp /etc/kubernetes/admin.conf config
+  993  kubectl get nodes
+  994  clear
+  995  kubectl get nodes
+  996  kubectl get pods
+  997  kubectl get pods --all-namespaces
+  998  kubectl get svc --all-namespaces
+  999  exit
+ 1000  clear
+ 1001  history 
+ 1002  clear
+ 1003  ubectl 
+ 1004  kubectl get nodes
+ 1005  clear
+ 1006  history>history 
